@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  min-height: 100vh;
+  background: #f1f1f1;
+}
+
+.dark-mode {
+  background-color: #333;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 480px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.card-dark {
+  background: #212121;
+  color: #f0f0f0;
+}
+.container-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .btn-view {
+  position: relative;
+  top: -10px;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  padding: 10px 30px;
+  /* margin-top: 5px; */
+  color: #f0f0f0;
+  font-weight: 700;
+  text-decoration: none;
+  background: #3565e0;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.1s;
+}
+
+.card:hover .btn-view {
+  top: -70px;
+  transition: all 0.1s;
+  opacity: 1;
+}
+
+.card .imgBox {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+.audifono {
+  height: 300px;
+  width: auto;
+}
+
+.tag {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #212121;
+  font-weight: 700;
+}
+.tag-dark {
+  color: #f0f0f0;
+}
+.title-product {
+  font-size: 15px;
+  color: #212121;
+  text-transform: unset;
+}
+.title-product-dark {
+  color: #f0f0f0;
+}
+
+.text-container {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  gap: 0.5em;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+}
+
+.prices {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5em;
+}
+.price {
+  color: #3565e0;
+  font-weight: 600;
+}
+.preview-price {
+  color: #999;
+  font-size: 14px;
+  text-decoration: line-through;
+}
