@@ -119,3 +119,23 @@
   font-size: 14px;
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 40%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 77%; /* O cualquier otro valor adecuado */
+  }
+}
