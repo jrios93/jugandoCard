@@ -1,35 +1,22 @@
-//Obtener el boton toggle
 var toggleButton = document.getElementById("toggle-button");
+var body = document.querySelector(".container");
+var products = document.querySelectorAll(".card");
 
-//Agregar un evento click al boton toggle
 toggleButton.addEventListener("click", function () {
-  // Obtener el elemento body
-  var body = document.querySelector(".container");
-  var card = document.querySelector(".card");
-  var tag = document.querySelector(".tag");
-  var textContainer = document.querySelector(".title-product");
+  body.classList.toggle("dark-mode");
 
-  // Revisar si el elemento body tiene la clase "dark-mode"
-  if (
-    body.classList.contains("dark-mode") &&
-    card.classList.contains("card-dark") &&
-    textContainer.classList.contains("title-product-dark") &&
-    tag.classList.contains("tag-dark")
-  ) {
-    // Remover la clase "dark-mode" del elemento body
-    body.classList.remove("dark-mode");
-    card.classList.remove("card-dark");
-    textContainer.classList.remove("title-product-dark");
-    tag.classList.remove("tag-dark");
-    // Cambiar el texto del botón toggle
-    toggleButton.innerHTML = "Activar modo oscuro";
-  } else {
-    // Agregar la clase "dark-mode" al elemento body
-    body.classList.add("dark-mode");
-    card.classList.add("card-dark");
-    textContainer.classList.add("title-product-dark");
-    tag.classList.add("tag-dark");
-    // Cambiar el texto del botón toggle
-    toggleButton.innerHTML = "Activar modo claro";
-  }
+  products.forEach(function (product) {
+    var card = product;
+    var tag = product.querySelector(".tag");
+    var textContainer = product.querySelector(".title-product");
+
+    card.classList.toggle("card-dark");
+    tag.classList.toggle("tag-dark");
+    textContainer.classList.toggle("title-product-dark");
+
+    // Cambiar el texto del botón en cada iteración
+    toggleButton.innerHTML = body.classList.contains("dark-mode")
+      ? "Cambiar a modo claro"
+      : "Cambiar a modo oscuro";
+  });
 });
