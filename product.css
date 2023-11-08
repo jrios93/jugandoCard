@@ -29,13 +29,14 @@ body {
 
 .products {
   display: flex;
+  margin-bottom: 3.6em;
 
   width: 100%;
   align-items: center;
   gap: 2em;
 }
 
-.product-left {
+.product-total {
   display: flex;
   width: 100%;
   gap: 2em;
@@ -101,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .text-tag-dark {
@@ -135,6 +136,7 @@ body {
 .quantity-input {
   background-color: transparent;
   font-weight: 700;
+  font-size: 1.3em;
   border: none;
   width: 20%;
 
@@ -149,13 +151,14 @@ body {
 .quantity {
   background-color: transparent;
   border: none;
-  font-size: 26px;
+  font-size: 1.8em;
   color: #3565e0;
   cursor: pointer;
 }
 
 .add-cart {
   width: 80%;
+  font-size: 1.2em;
   cursor: pointer;
   height: 100%;
   font-weight: 700;
@@ -169,11 +172,91 @@ body {
 .btn-shop {
   background-color: #3565e0;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.3em;
   border: none;
   color: #f1f1f1;
   font-weight: bold;
   padding: 5% 30%;
   border-radius: 5px;
   text-align: center;
+}
+
+.text-subtitles {
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+}
+.product-tech {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.list-tech-product {
+  list-style: none;
+  margin-top: -0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.ionicon {
+  width: 5%;
+  height: auto;
+}
+.stock {
+  color: #118111;
+}
+.list-icon {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.text-descri {
+  font-weight: 700;
+  color: #333;
+}
+
+.product-travel-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.icons {
+  width: 2%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.about-description {
+  cursor: pointer;
+  display: flex;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+  padding: 0.5em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-description:hover {
+  color: #007aff;
+}
+
+.about-characteristics {
+  cursor: pointer;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+  padding: 0.5em 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-characteristics:hover {
+  color: #007aff;
 }
