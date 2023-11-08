@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM sans", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.navi {
+  font-size: 12px;
+  color: #999;
+  font-weight: 700;
+}
+.container-product {
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 5em;
+}
+.dark-mode {
+  background-color: #212121;
+}
+
+.products {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  gap: 2em;
+}
+
+.product-left {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+}
+
+.imgProduct {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  gap: 1em;
+}
+
+.miniature {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.img-center {
+  width: 80%;
+  height: auto;
+}
+.img-principal {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.product-right {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: auto;
+  gap: 1em;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.title-product {
+  font-size: 36px;
+  color: #222;
+}
+.title-product-dark {
+  color: #f0f0f0;
+}
+.price {
+  font-size: 26px;
+  color: #3565e0;
+  font-weight: 600;
+}
+
+.price-after {
+  color: #999;
+  font-size: 18px;
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.text-tag {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 12px;
+}
+
+.text-tag-dark {
+  color: #f0f0f0;
+}
+.product-shopy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-shopy-dark {
+  color: #f0f0f0;
+}
+.btn-up {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.quantity_button {
+  position: relative;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #3333;
+
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.quantity-input {
+  background-color: transparent;
+  font-weight: 700;
+  border: none;
+  width: 20%;
+
+  text-align: center;
+}
+.quantity-input-dark {
+  color: #f0f0f0;
+}
+.quantity-input :focus {
+  border: none;
+}
+.quantity {
+  background-color: transparent;
+  border: none;
+  font-size: 26px;
+  color: #3565e0;
+  cursor: pointer;
+}
+
+.add-cart {
+  width: 80%;
+  cursor: pointer;
+  height: 100%;
+  font-weight: 700;
+  border: 1px solid #999;
+  padding: 16px 26px;
+  border-radius: 5px;
+}
+.add-cart:hover {
+  border: 1px solid #3565e0;
+}
+.btn-shop {
+  background-color: #3565e0;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: #f1f1f1;
+  font-weight: bold;
+  padding: 5% 30%;
+  border-radius: 5px;
+  text-align: center;
+}
