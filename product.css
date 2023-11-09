@@ -146,6 +146,9 @@ body {
   border-radius: 5px;
   padding: 16px;
 }
+.quantity_button-dark{
+  border: 1px solid #f8f8f8;
+}
 
 .quantity-input {
   background-color: transparent;
@@ -201,10 +204,16 @@ body {
   font-weight: 600;
   color: #121212;
 }
+.text-subtitles-dark {
+  color: #f8f8f8f8;
+}
 .product-tech {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+.product-tech-dark {
+  color: #f8f8f8;
 }
 .list-tech-product {
   list-style: none;
@@ -387,7 +396,20 @@ body {
 .about-visibility.about-text {
   display: none;
 }
+
+.character-text {
+  display: none;
+}
 .about-visibility {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.character-visibility {
   display: flex;
   justify-content: start;
   align-items: start;
@@ -418,6 +440,9 @@ body {
   .about-visibility {
     font-size: 0.8em;
   }
+  .character-visibility {
+    font-size: 0.8em;
+  }
   .right-product-relational {
     font-size: 0.9em;
   }
@@ -442,6 +467,7 @@ body {
   .about-visibility {
     font-size: 0.8em;
   }
+
   .right-product-relational {
     font-size: 0.8em;
   }
@@ -466,14 +492,14 @@ body {
     padding: 0 0;
     margin: 0;
   }
-  .product-relational{
+  .product-relational {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .right-product-relational {
     font-size: 0.7em;
-    
+
     width: auto;
   }
   .cuentas-bancarias {
@@ -482,11 +508,11 @@ body {
   .quantity_button {
     width: 20%;
   }
-  .quantity_button{
+  .quantity_button {
     width: 100%;
     height: auto;
   }
-  .add-cart{
+  .add-cart {
     height: auto;
     font-size: 1em;
   }
