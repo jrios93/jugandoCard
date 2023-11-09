@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+
   min-height: 100vh;
   padding: 5em;
 }
@@ -30,14 +31,13 @@ body {
 .products {
   display: flex;
   margin-bottom: 3.6em;
-
-  width: 100%;
   align-items: center;
   gap: 2em;
 }
 
 .product-total {
   display: flex;
+  padding: 1em;
   width: 100%;
   gap: 2em;
 }
@@ -67,7 +67,7 @@ body {
 .product-right {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   height: auto;
   gap: 1em;
 }
@@ -81,6 +81,12 @@ body {
 .title-product {
   font-size: 36px;
   color: #222;
+}
+
+.star-flex {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
 }
 .title-product-dark {
   color: #f0f0f0;
@@ -102,6 +108,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
+
   font-size: 14px;
 }
 
@@ -157,8 +164,8 @@ body {
 }
 
 .add-cart {
-  width: 80%;
-  font-size: 1.2em;
+  width: 100%;
+  font-size: 1.1em;
   cursor: pointer;
   height: 100%;
   font-weight: 700;
@@ -171,6 +178,7 @@ body {
 }
 .btn-shop {
   background-color: #3565e0;
+  width: 100%;
   cursor: pointer;
   font-size: 1.3em;
   border: none;
@@ -204,6 +212,7 @@ body {
 }
 .stock {
   color: #118111;
+  font-weight: 700;
 }
 .list-icon {
   font-size: 14px;
@@ -232,8 +241,14 @@ body {
   gap: 1em;
 }
 .about-description {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.about-content {
   cursor: pointer;
   display: flex;
+  gap: 0.5em;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
@@ -242,7 +257,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.about-description:hover {
+.about-content:hover {
   color: #007aff;
 }
 
@@ -257,6 +272,88 @@ body {
   align-items: center;
 }
 
+.about-visibility {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: auto;
+}
+
 .about-characteristics:hover {
   color: #007aff;
+}
+
+.cuentas-bancarias {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 1em;
+  border-radius: 10px;
+  gap: 0.5em;
+  border: 2px solid #007aff;
+}
+.list-cuentas-bancarias {
+  display: flex;
+  gap: 0.5em;
+}
+/* .market-place {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.list-market-place {
+  display: flex;
+}
+.img-market-place {
+  height: 30%;
+  border-radius: 10px;
+  width: 100%;
+} */
+
+.product-relational {
+  background-color: #ffff;
+  padding: 1em;
+  display: flex;
+
+  height: auto;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.left-product-relational {
+  width: 40%;
+}
+.right-product-relational {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.add {
+  font-size: 12px;
+  padding: 1em 2em;
+  cursor: pointer;
+  border: none;
+  color: #3b6be2;
+  font-weight: 700;
+  text-decoration: none;
+  background: #f1f4fd;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* description */
+
+.about {
+  padding: 1em;
+}
+.about-text {
+  display: none;
+}
+.about-parrafo {
+  font-size: 13px;
 }

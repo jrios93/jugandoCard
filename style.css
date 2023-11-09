@@ -121,7 +121,17 @@
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 761px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 38%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 755px) {
   .container {
     flex-direction: column;
   }
@@ -131,7 +141,35 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+  .btn-view {
+    top: -70px;
+    opacity: 1;
+  }
+
+  .card {
+    width: 68%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    flex-direction: column;
+  }
+  .btn-view {
+    top: -70px;
+    opacity: 1;
+  }
+
+  .card {
+    width: 70%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 382px) {
   .container {
     flex-direction: column;
   }
@@ -142,5 +180,33 @@
 
   .card {
     width: 77%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    flex-direction: column;
+  }
+  .btn-view {
+    top: -70px;
+    opacity: 1;
+  }
+
+  .card {
+    width: 84%; /* O cualquier otro valor adecuado */
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .container {
+    flex-direction: column;
+  }
+  .btn-view {
+    top: -70px;
+    opacity: 1;
+  }
+
+  .card {
+    width: 100%; /* O cualquier otro valor adecuado */
   }
 }
