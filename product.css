@@ -8,7 +8,11 @@
 body {
   background-color: #f1f1f1;
 }
-
+.total {
+  display: flex;
+  justify-content: center;
+  padding: 2em 2em;
+}
 .navi {
   font-size: 12px;
   color: #999;
@@ -22,7 +26,7 @@ body {
   align-items: start;
 
   min-height: 100vh;
-  padding: 5em;
+  padding: 1em;
 }
 .dark-mode {
   background-color: #212121;
@@ -37,6 +41,7 @@ body {
 
 .product-total {
   display: flex;
+  justify-content: center;
   padding: 1em;
   width: 100%;
   gap: 2em;
@@ -70,6 +75,7 @@ body {
   width: 100%;
   height: auto;
   gap: 1em;
+  padding: 1em;
 }
 
 .prices {
@@ -87,6 +93,10 @@ body {
   display: flex;
   gap: 0.5em;
   align-items: center;
+}
+
+.review-star {
+  font-size: 12px;
 }
 .title-product-dark {
   color: #f0f0f0;
@@ -108,8 +118,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
-
-  font-size: 14px;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .text-tag-dark {
@@ -129,13 +139,10 @@ body {
   gap: 0.5em;
 }
 .quantity_button {
-  position: relative;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   border: 1px solid #3333;
-
   border-radius: 5px;
   padding: 16px;
 }
@@ -190,7 +197,7 @@ body {
 }
 
 .text-subtitles {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
   color: #121212;
 }
@@ -239,6 +246,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
+  width: 70em;
 }
 .about-description {
   display: flex;
@@ -272,13 +280,6 @@ body {
   align-items: center;
 }
 
-.about-visibility {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  height: auto;
-}
-
 .about-characteristics:hover {
   color: #007aff;
 }
@@ -289,12 +290,28 @@ body {
   background-color: #f8f8f8;
   padding: 1em;
   border-radius: 10px;
-  gap: 0.5em;
+  gap: 1em;
   border: 2px solid #007aff;
+}
+.title-cuentas {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #333;
 }
 .list-cuentas-bancarias {
   display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.cuentas-bancarias-p {
+  display: flex;
+  flex-direction: column;
   gap: 0.5em;
+}
+.more {
+  color: #0e2f7f;
+  cursor: pointer;
+  font-size: 1em;
 }
 /* .market-place {
   width: 100%;
@@ -331,10 +348,26 @@ body {
   flex-direction: column;
   gap: 0.5em;
 }
-
+.title-product-relational {
+  font-size: 1em;
+}
+.title-product-relational-p {
+  font-size: 0.9em;
+}
+.price-product-relational {
+  font-size: 1.5em;
+  color: #000;
+  font-weight: 700;
+}
+.price-product-relational-after {
+  color: #999;
+  font-size: 1em;
+  text-decoration: line-through;
+  font-weight: bold;
+}
 .add {
-  font-size: 12px;
-  padding: 1em 2em;
+  font-size: 1em;
+  padding: 1em 1.5em;
   cursor: pointer;
   border: none;
   color: #3b6be2;
@@ -351,9 +384,110 @@ body {
 .about {
   padding: 1em;
 }
-.about-text {
+.about-visibility.about-text {
   display: none;
 }
+.about-visibility {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+.about-subtitle {
+  font-size: 1.4em;
+}
 .about-parrafo {
-  font-size: 13px;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 1750px) {
+  .product-left {
+    width: 60%;
+  }
+  .text-tag {
+    font-size: 0.9em;
+  }
+  .about {
+    width: 95%;
+  }
+  .product-right {
+    width: 40%;
+  }
+  .about-visibility {
+    font-size: 0.8em;
+  }
+  .right-product-relational {
+    font-size: 0.9em;
+  }
+  .cuentas-bancarias {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .product-left {
+    width: 60%;
+  }
+  .text-tag {
+    font-size: 0.9em;
+  }
+  .about {
+    width: 95%;
+  }
+  .product-right {
+    width: 40%;
+  }
+  .about-visibility {
+    font-size: 0.8em;
+  }
+  .right-product-relational {
+    font-size: 0.8em;
+  }
+  .cuentas-bancarias {
+    font-size: 0.8em;
+  }
+  .quantity_button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .products {
+    flex-direction: column-reverse;
+  }
+  .imgProduct {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .total {
+    padding: 0 0;
+    margin: 0;
+  }
+  .product-relational{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-product-relational {
+    font-size: 0.7em;
+    
+    width: auto;
+  }
+  .cuentas-bancarias {
+    font-size: 0.6em;
+  }
+  .quantity_button {
+    width: 20%;
+  }
+  .quantity_button{
+    width: 100%;
+    height: auto;
+  }
+  .add-cart{
+    height: auto;
+    font-size: 1em;
+  }
 }

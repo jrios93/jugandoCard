@@ -1,6 +1,7 @@
 let toggleButton = document.getElementById("toggle-button");
 let body = document.querySelector(".container-product");
-let accordionAbout = document.getElementById("about-title");
+let accordionAbout = document.getElementById("aboutTitle");
+console.log(accordionAbout);
 
 toggleButton.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
@@ -19,6 +20,7 @@ toggleButton.addEventListener("click", function () {
     : "Cambiar a modo oscuro";
 });
 accordionAbout.addEventListener("click", function () {
-  let aboutText = document.querySelector(".about-text");
-  aboutText.classList.toggle("about-visibility");
+  console.log("dando click");
+  let aboutText = document.querySelector(".about-visibility");
+  aboutText.classList.toggle("about-text");
 });
